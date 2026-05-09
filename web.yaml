@@ -1,0 +1,7 @@
+- name: Configure Web server
+  hosts: web
+  vars_files:
+  - variables.yaml
+  become: yes
+  roles:
+  - web

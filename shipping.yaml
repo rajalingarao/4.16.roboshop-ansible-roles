@@ -1,0 +1,7 @@
+- name: Configure Shipping server
+  hosts: shipping
+  vars_files:
+  - variables.yaml  
+  become: yes
+  roles:
+  - shipping

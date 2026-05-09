@@ -1,0 +1,7 @@
+- name: Configure Payment server
+  hosts: payment
+  vars_files:
+  - variables.yaml
+  become: yes
+  roles:
+  - payment
